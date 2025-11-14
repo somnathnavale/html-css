@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 90%;
+            margin: auto;
+            border: 2px solid red;
+            background-color: lightcyan;
+            padding: 10px;
+            /* overflow: hidden;         this is third way to clear float */
+        }
+        .block1{
+            width: 25%;
+            margin:auto;
+            float: left;
+        }
+        .block2{
+            width: 75%;
+            float: right; 
+        }
+        /* .clearbox{
+             clear: both;  this is another method to clear by created one more 
+                            div and make it clear
+        } */
+        .wrapper::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="block1">
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </div>
+        <div class="block2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eum consequuntur eligendi iure praesentium laudantium cupiditate possimus, harum animi perspiciatis esse ipsum fuga quo maxime corrupti accusamus eveniet optio unde temporibus fugiat beatae. Fugit placeat delectus ipsa ducimus ipsam velit unde nisi dolor, expedita voluptatem ut earum, ab tempora odit vitae, dolores nobis repellendus et doloremque optio. Ullam blanditiis officiis accusantium, inventore laudantium amet dolores! Magni amet vitae cupiditate rem placeat maxime repudiandae. Blanditiis quam ipsum ratione accusamus ducimus? Reprehenderit numquam blanditiis iure quod, soluta eius sint consequatur ipsa cum eum vero velit ut quam cupiditate est perspiciatis quisquam doloremque quasi dolorem explicabo quo molestiae minima repellat quibusdam! Vero cumque est natus iste distinctio. Labore maxime placeat quia, optio facilis quae illo est unde quasi et blanditiis. Rerum voluptates nisi repellat dolore fuga ducimus magni optio fugit quaerat, totam quis excepturi vero, similique, nam iste voluptatem aut architecto non odit!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat incidunt soluta quas unde, eos eius ratione minus, magni iste sed sit sequi illum fugiat repellat nisi sapiente voluptas pariatur voluptatum. Esse modi debitis qui omnis voluptatibus, consequatur explicabo illo quasi.</p>
+        </div>
+        <div class="clearbox"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: rgb(224, 247, 247);
+}
+header>h1{
+    color: white;
+    padding: 30px;
+    text-align: center;
+    background: cadetblue;
+}
+.navbar{
+    background: aquamarine;
+    /* padding: 10px; */
+    overflow: hidden;
+}
+.navbar ul li{
+    font-size: 1em;
+    padding:0.5em;
+    /* display: inline; */
+    float: left;
+}
+.courses{
+    margin-top: 10vh;
+    background: rgb(238, 230, 227);
+}
+.courses h2,.study-material h2,.college-review h2,.me h2,.me h3{
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(8, 8, 131);
+    margin: 10px;
+}
+.courses video{
+    width: 33%;
+    height: 300px;
+    margin-left: -1px;
+    object-fit: cover;
+    margin-bottom: 15vh;
+    object-fit: cover;
+}
+.college-review{
+    margin-bottom: 15vh;
+}
+.study-material img{
+    padding: 10px;
+    width: 33%;
+    height: 400px;
+    object-fit: cover;
+}
+.study-material{
+    margin-bottom: 10vh;
+}
+.me img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.me h3{
+    text-decoration: none;
+    color: black;
+}
+.me p{
+    width: 40%;
+    margin: auto;
+    text-indent: 50px;
+}
+.me{
+    margin-bottom: 10vh;
+}
+.footer{
+    background-color:lightsalmon ;
+    overflow: hidden;
+}
+.footer ul{
+    width: 80%;
+    margin: auto;
+}
+.footer ul li{
+    padding: 10px;
+    float: right;
+}
+.footer .copyright{
+    float:left;
+    padding-left:10%
+}

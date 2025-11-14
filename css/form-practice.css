@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.part1{
+    border: 2px solid lightgrey;
+    max-width: 80%;
+    width: 400px;
+    height: auto;
+    margin: 10% auto;
+    background-color: rgb(176, 231, 233);
+    border-radius: 5px;
+}
+.part1 h2,.part1 h3{
+    text-align: center;
+    padding-top: 10px;
+}
+ .part1 input{
+    display: block;
+    width: 60%;
+    margin: 5px auto;
+    padding: 10px;
+    border: none;
+}
+.part1 input[type="submit"]{
+    width: 30%;
+    padding: 10px;
+    margin:10px auto;
+    border: none;
+    cursor: pointer;
+}
+

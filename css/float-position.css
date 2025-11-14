@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.wrapper{
+    border: 2px solid red;
+    width: 70%;
+    height: auto;
+    margin:2em auto;
+    padding: 15px;
+}
+.wrapper img{
+    width: 50%;
+    height: 150px;
+    float: left;
+    margin: 10px;
+}
+.wrapper h2{
+    text-align: center;
+    background: rgba(158, 189, 199, 0.521);
+}
+.wrapper p{
+    text-indent: 20px;
+}

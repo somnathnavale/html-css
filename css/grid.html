@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding:0;
+            margin: 0;
+        }
+        .container{
+            min-height: 700px; 
+            height: auto;
+            width: 900px;
+            background-color: aquamarine;  
+            display: grid;
+            /* grid-template-columns: 133px 133px 133px; */
+            /* grid-template-rows: 133px 133px 133px; */
+            grid-template-rows:repeat(3,1fr) ;
+            grid-template-columns: repeat(3,1fr);
+            /* grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 150px 1fr 122px; */
+            /* row-gap: 10px;
+            column-gap: 10px; */
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            /* place-items: center;   
+              same result as combining above two */
+        }
+        .item{
+            background-color: cadetblue ;
+            height: 122px;
+            width: 122px;
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            /* grid-column: 1/-1; */
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+        }
+        .footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .item1{
+            justify-self: center;
+            width: 100%;
+        }
+        .item2{
+            /* border: 2px solid red; */
+            /* justify-self:center;
+            align-self:center; */
+            place-self:center;                          
+             /*give same result by combining above two properties */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1"><h1>This is Header</h1></div>
+        <div class="item item2">Lorem ipsum, dolor sit amet consectetur  </div>
+        <div class="item item3"></div>
+        <div class="item"></div>
+        <div class="item footer"></div>
+    </div>
+</body>
+</html>

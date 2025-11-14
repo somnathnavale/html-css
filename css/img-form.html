@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Image and form</title>
+    <link rel="stylesheet" href="img-form.css">
+</head>
+<body>
+    <div class="full-wrap">
+        <h2 style="text-align: center; width: 500px; margin: 5px;color: darkorange;">image property</h2>
+        <div class="wrapper">
+            <img src="bg.jpg" alt="background image">
+        </div>
+    </div>
+    <div class="form-block">
+        <form action="">
+            <h2>Payment Form</h2>
+            <hr>
+            <h3>User Information</h3>
+            <label for="name">Name :</label>
+            <input type="text" name="name" id="name" placeholder="Somnath navale" required>
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" required>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" required>
+            </fieldset>
+            <label for="address">Address :</label>
+            <br>
+            <textarea name="address" id="address" cols="30" rows="10" required placeholder="at post-kuran"></textarea>
+            <br>
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email" required placeholder="someone@mail.com">
+            <br>
+            <label for="passwd">Password :</label>
+            <input type="password" name="passwd" id="passwd" required placeholder="*********" minlength="8" maxlength="20">
+            <br>
+            <hr>
+            <h3>Payment Information</h3>
+            
+            <label for="cardtype">Card Type :</label>
+            <select name="cardtype" id="cardtype" required>
+                <option value="select">Select card</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="rupay">Rupay</option>
+            </select>
+            <br>
+            <label for="cardnumber">Card Number :</label>
+            <input type="number" name="cardnumber" id="cardnumber" required  minlength="12" maxlength="12" placeholder="1111-2222-3333-4444">
+            <br>
+            <label for="expdate">Expiration date : </label>
+            <input type="date" name="expdate" id="expdate" required>
+            <br>
+            <label for="cvv">CVV :</label>
+            <input type="password" name="cvv" id="cvv" required minlength="3" maxlength="3" placeholder="***">
+            <br>
+            <input type="submit" value="Pay Now">
+        </form>
+    </div>
+</body>
+</html>

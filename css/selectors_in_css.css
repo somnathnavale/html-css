@@ -1,0 +1,49 @@
+/* This is universal selectors */
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Type selector */
+h1{
+    font-style: italic;
+    text-align: center;
+    border:5px solid grey;
+}
+
+  /* combine selector */
+h1,p{
+    margin: 5px;
+    text-indent: 20px;
+}
+
+/* attribute selector  */
+a[href="https://www.google.com"]{
+    font-size: large;
+    font-weight: 900;
+    color:rgb(3, 3, 66);
+    background: rgb(241, 200, 32);
+    padding: 0.3rem 0.5rem;
+    border: 2px solid gray;
+    text-decoration: none; 
+}
+/* class selector */
+.abc{
+    margin: 10px;
+}
+/* pseudo class selector */
+a[href="https://www.google.com"]:hover{
+    font-size: 3em;
+    cursor: pointer;       /* help , move, zoom-in , zoom-out */
+    background: violet;
+    content: "gone";
+}
+
+/* comibinator selector */
+p>span{
+    color: red;
+    background: pink;
+    font-size: x-large;
+}

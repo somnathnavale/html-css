@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>links tutorial</title>
+  </head>
+  <body>
+    <header style="text-align: center; font-size: 25px; font-family: cursive">
+      link and Media Tutorial
+    </header>
+
+    <main>
+      <div>
+        <pre>    <a href=#d1 >links</a>     <a href=#d2>images</a>    <a href=#d3>Videos</a>   <a href=#d4>Lists</a>    <a href="#d5">tables</a>   <a href="#d6">containers</a>    <a href="#d7">Input</a>   <a href="#d8">Forms</a>    </pre>
+      </div>
+      <div id="d1">
+        <h2>Links Are explained Here</h2>
+        <a href="https://www.google.com">google</a>
+        <br />
+        <a href="https://www.google.com" target="_blank">google</a>
+        <br />
+        <a href="page2.html" target="_blank">page 2</a>
+        <br />
+        <a href="Somnath_Navale.jpeg" target="_blank">My Pic</a>
+        <br />
+        <aside>
+          <a href="index.html"
+            ><img src="images/Somnath_Navale.jpeg" width="10%" alt="my image"
+          /></a>
+        </aside>
+      </div>
+      <hr />
+
+      <div id="d2">
+        <h2>image tag is explained here</h2>
+
+        <img
+          src="images/Somnath_Navale.jpeg"
+          width="24%"
+          height="20%"
+          alt="My Image"
+        />
+        <img
+          src="images/Somnath_Navale.jpeg"
+          width="24%"
+          height="20%"
+          alt="My Image"
+        />
+        <img
+          src="images/Somnath_Navale.jpeg"
+          width="24%"
+          height="20%"
+          alt="My Image"
+        />
+        <img
+          src="images/Somnath_Navale.jpeg"
+          width="24%"
+          height="20%"
+          alt="My Image"
+        />
+      </div>
+      <hr />
+      <div id="d3">
+        <h2>video tag is explained Here</h2>
+
+        <video
+          src="videos/WIN_20210129_10_34_35_Pro.mp4"
+          width="33%"
+          controls
+          poster="images/Somnath_Navale.jpeg"
+          loop
+        ></video>
+        <video
+          src="videos/WIN_20210129_10_34_35_Pro.mp4"
+          width="33%"
+          controls
+          poster="images/Somnath_Navale.jpeg"
+          loop
+        ></video>
+        <video
+          src="videos/WIN_20210129_10_34_35_Pro.mp4"
+          width="33%"
+          controls
+          poster="images/Somnath_Navale.jpeg"
+          loop
+        ></video>
+        <img src="./images/img1.jpg" alt="">
+        <video src="./videos/WIN_20210129_10_34_35_Pro.mp4" controls width="50%" autoplay ></video>
+        <br />
+        <!--
+            <video controls poster="images/Somnath_Navale.jpeg" width="25%">
+                <source src="videos/WIN_20210129_10_34_35_Pro.mp4" type=video/mp4 width="25%">                
+            </video>
+           
+            <video controls poster="images/Somnath_Navale.jpeg" width="25%">
+                <source src="videos/WIN_20210129_10_34_35_Pro.mp4" type=video/mp4 width="25%">                
+            </video>
+           
+            <video controls poster="images/Somnath_Navale.jpeg" width="25%">
+                <source src="videos/WIN_20210129_10_34_35_Pro.mp4" type=video/mp4 width="25%">                
+            </video>
+        -->
+      </div>
+      <br />
+      <hr />
+      <div id="d4">
+        <h2>List tag is explained Here</h2>
+        <section>
+          <h3>unordered fruits list</h3>
+          <ul>
+            <li><a href="https://youtube.com" target="_blank">Apples</a></li>
+            <li><a href="#">Oranges</a></li>
+            <li><a href="#">bananas</a></li>
+          </ul>
+        </section>
+        <hr />
+        <section>
+          <h3>Ordered Students list</h3>
+          <ol>
+            <li>Somnath Navale</li>
+            <li>Sameer garude</li>
+            <li>kelya helaskar</li>
+          </ol>
+        </section>
+        <hr />
+        <section>
+          <h3>Ordered nested list</h3>
+          <ol type="I">
+            <li>
+              Somnath Navale
+              <ul>
+                <li>address:-At Post kuran</li>
+                <li>Gr N0:-21810624</li>
+              </ul>
+            </li>
+            <li>
+              Sameer garude
+              <ul>
+                <li>address:-At Post Bhum</li>
+                <li>Gr N0:-21810614</li>
+              </ul>
+            </li>
+
+            <li>
+              kelya helaskar
+              <ul>
+                <li>address:-At Post aurangabad</li>
+                <li>Gr N0:-21810854</li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+      </div>
+      <hr />
+      <div id="d5">
+        <h3>Tables Are explained here</h3>
+
+        <table>
+          <thead>
+            <caption style="font-size: 20px">
+              <b>Students data</b>
+            </caption>
+            <tr>
+              <th>name</th>
+              <th>Gr No</th>
+              <th>Branch</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>somnath</td>
+              <td>21810624</td>
+              <td rowspan="3">E&TC</td>
+            </tr>
+            <tr>
+              <td>Sameer</td>
+              <td>21810614</td>
+              <!-- <td>E&TC</td> -->
+            </tr>
+            <tr>
+              <td>kelya</td>
+              <td>21810856</td>
+              <!-- <td>E&TC</td> -->
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td colspan="2" >3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr />
+      <div id="d6">
+        <h3>Containers</h3>
+        <div>division are blocks like Paragraph tag</div>
+        <span>Span are inline element like anchor tag</span>
+      </div>
+      <hr />
+      <div id="d7">
+        <h3>Input tag is explained here</h3>
+
+        <input type="text" value="Enter username here" />
+        <br />
+
+        <input type="password" />
+        <br />
+
+        <input type="date" />
+        <br />
+
+        <input type="email" />
+        <br />
+
+        <input type="file" />
+        <br />
+        <br />
+
+        <input name="button" type="radio" />
+        <input name="button" type="radio" />
+        <input name="button" type="radio" />
+
+        <br />
+        <br />
+        <input type="submit" />
+        <br />
+        <br />
+
+        <textarea rows="3" cols="20">
+            enter a Paragraph.
+        </textarea>
+      </div>
+
+      <hr />
+
+      <div id="d8">
+        <h3>forms are here</h3>
+        <form>
+          <input type="text" />
+          <br />
+          <input type="password" />
+          <br />
+          <input type="date" />
+          <br />
+          <input type="email" />
+          <br />
+          <input type="number" digit />
+          <br />
+          <input type="submit" />
+          <br />
+        </form>
+      </div>
+      <div>
+        <iframe src="https://youtube.com" width="500" height="300">
+          google.com
+        </iframe>
+      </div>
+    </main>
+  </body>
+</html>

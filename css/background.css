@@ -1,0 +1,35 @@
+/*
+
+background-color
+background-image:url()
+background-repeat:repeat/no-repeat/x-repeat/y-repeat
+background-attachment:fixed/scroll
+background-position:center/left/left top/right bottom /right
+background-size:cover/400px/contain
+
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.header{
+    color: darkblue;
+    background-color: cadetblue;
+    border: 2px solid rgb(2, 72, 75);
+    text-align: center;
+    /* display: flex; */
+    /* padding-left:40% ; */
+    /* justify-content: space-around; */
+}
+
+.second-para{
+    margin:5px 10px;
+    background:url("bg.jpg");
+    background-repeat:no-repeat;
+    background-size:400px;
+    background-position: top center;
+    background-attachment: scroll;
+}

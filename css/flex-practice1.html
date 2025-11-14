@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex practice 1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container,
+        .container1{
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+       .container .container1{
+            margin-top: 20px;
+            /* align-items: flex-end; */
+        }
+        .item{
+            background-color: burlywood;
+        }
+        .row1,.row2,.row3{
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        .row1{
+            flex-basis: 33%;
+            min-height:150px ;
+        }
+        .row2{
+            flex-basis: 24.7%;
+            min-height: 30px;
+        }
+        .row3{
+            flex-basis: 19.5%;
+            min-height: 30px;
+        }
+        .inner-row1,.inner-row2,.inner-row3{
+            background-color: chocolate;
+            padding: 5px;
+            min-height:20px ;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        .inner-row1{flex-basis: 33%;}
+        .inner-row2{flex-basis: 24.7%;}
+        .inner-row3{flex-basis: 19.5%;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item row1">
+            1
+            <div class="container1">
+                <div class="inner-row1">1</div>
+                <div class="inner-row1">2</div>
+                <div class="inner-row1">3</div>
+                <div class="inner-row2">4</div>
+                <div class="inner-row2">5</div>
+                <div class="inner-row2">6</div>
+                <div class="inner-row2">7</div>
+                <div class="inner-row3">8</div>
+                <div class="inner-row3">9</div>
+                <div class="inner-row3">10</div>
+                <div class="inner-row3">11</div>
+                <div class="inner-row3">12</div>
+            </div>
+        </div>
+        <div class="item row1">2</div>
+        <div class="item row1">3</div>
+        <div class="item row2">4</div>
+        <div class="item row2">5</div>
+        <div class="item row2">6</div>
+        <div class="item row2">7</div>
+        <div class="item row3">8</div>
+        <div class="item row3">9</div>
+        <div class="item row3">10</div>
+        <div class="item row3">11</div>
+        <div class="item row3">12</div>
+    </div>
+</body>
+</html>

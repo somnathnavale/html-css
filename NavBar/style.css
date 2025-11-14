@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.stars{
+    user-select: none;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+.stars~p{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.star{
+    font-size: 40px;
+    color:orange;
+    opacity:0.3;
+    cursor: pointer;
+}
+.stars:hover .star{
+    opacity:1;
+}
+
+.stars .star:hover{
+    opacity:1;
+}
+
+.stars .star:hover ~.star{
+    opacity:0.5;
+}

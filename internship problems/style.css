@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    padding: 10px;
+    border: 5px solid rgba(54, 51, 235, 0.863);
+    max-height: 300px;
+    width: 300px;
+}
+.header{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 2px solid gray;
+}
+
+.btn{
+    color: white;
+    font-weight: 500;
+    display: block;
+    margin: 5px;
+    background-color: rgb(38, 27, 187);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(54, 47, 153);
+}
+
+.player{
+    margin: 10px 5px ;
+    font-size: 2rem;
+    text-transform:capitalize;
+}

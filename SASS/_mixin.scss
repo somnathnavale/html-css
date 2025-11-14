@@ -1,0 +1,14 @@
+@mixin flexprob(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    
+}
+@mixin commoncode($var1,$var2){
+    color:$main-color;
+    font-size: 2rem + 3rem;
+    letter-spacing: $var1;
+    text-transform: $var2;
+    transition: color 0.5s ease;
+}

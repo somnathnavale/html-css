@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors practice</title>
+    <style>
+        body{
+            background-color:rgba(170, 226, 231, 0.473);
+
+        }
+        h1{
+            text-align: center;
+            color:deeppink;
+            background-color: rgb(26, 53, 170);
+            margin:-8px -8px 0px -8px;
+        }
+        .para{                                                          /*class selector*/
+            color:rgb(50, 103, 156);
+        }
+        #na{
+            color: rgb(36, 170, 92);               /*id selector*/
+            background-color: floralwhite;
+            text-indent: 25px;
+        }
+        /* a[href="https://www.google.com/search?q=css+w3scho&oq=css+w3scho&aqs=chrome..69i57j69i60.5113j0j7&sourceid=chrome&ie=UTF-8"]
+        {
+            color:rgb(11, 4, 73);
+            text-decoration: none;
+            background-color:blanchedalmond;                               
+            border:4px solid brown;
+            padding: 6px 12px;
+        } */                                                                /* this is attribute selector*/
+        a{
+            color: rgb(223, 37, 37);
+            text-decoration: none;
+            background-color: lightpink;
+            border: 3px solid red;
+            padding:5px 20px;
+            font-size:x-large;
+        }
+        a:hover{                                         /*pusedo selector*/
+            color:rgb(16, 6, 105);
+            background-color: rgb(200, 202, 164);
+            padding: 10px 60px;
+        }
+        *{
+            text-decoration: none;                                   /*     universal selector is used here */
+        }
+    </style>
+</head>
+<body>
+    <h1>this is heading</h1>
+    <h2 class="para">paragraph shown below</h2>
+    <p id="na">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita optio deleniti quasi ex ea dolorum molestias itaque excepturi laboriosam? Necessitatibus</p>
+   <a href="https://www.google.com/search?q=css+w3scho&oq=css+w3scho&aqs=chrome..69i57j69i60.5113j0j7&sourceid=chrome&ie=UTF-8">css</a>
+</body>
+</html>

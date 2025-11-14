@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+nav li{
+    list-style-type: none;
+    list-style-position: outside;
+}
+ul{
+    display: flex;
+    min-width: 20%;
+    justify-content: space-between;
+}
+.navbar{
+    width: 100%;
+    background-color: rgba(182, 153, 96, 0.76);
+    border: 2px solid grey;
+    border-radius: 6px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding:5px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar li a{
+    padding: 0.2rem 0.4rem;
+    font-weight: 700;
+    color:rgb(45, 32, 216);
+}
+.navbar li a:hover{
+    border: 1px solid rgb(206, 178, 141);
+    border-radius: 20px;
+    /* border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    background-color: seashell;
+}
+.main-body{
+    width:800px;
+    min-height: 600px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+.main-body h2{
+    color: rgb(128, 105, 7);
+    border: 2px solid grey;
+    background-color: rgba(211, 211, 211, 0.253);
+    border-radius: 4px;
+}
+.main-body table,tr,td,th{
+    border: 2px solid black;
+    border-radius: 5px;
+    border-collapse: collapse;
+    padding: 4px;
+}
+.table1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    height:120%;
+    background-color: linen;
+    border: 2px solid rgb(207, 207, 59);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-body .div2{
+    margin: auto;
+    margin-top:20px;
+    background-color: honeydew;
+    border: 2px solid grey;
+    width: 200px;
+    height: 100px;
+    overflow: auto;  /* hidden,scroll,visible , auto*/
+}

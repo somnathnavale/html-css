@@ -1,0 +1,59 @@
+@import "mixin" ;
+@import "variables";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// 1. Operators
+// 2. variables
+// 3. nesting
+// 4. mixing
+// 5. parameter
+// 6. partial - file name start with '_'
+
+
+html{
+    font-size: 62.5%;
+}
+.main-header{
+    width: 100vw;
+    height: 100vh;
+    @include flexprob();
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-flow: column wrap;
+    // display: grid;
+    // place-items: center;
+    background:$bg-color ;
+
+    h1{                     //      nesting
+        // color:#222f3e;
+        // font-size: 2rem + 3rem;
+        // transition: color 0.5s ease;
+        @include commoncode(0.8rem,uppercase );
+        &:hover{
+            color: #c8d6e5;
+        }
+        &::after{
+            content:"   @Somnath";
+        }
+    }
+    p{
+        // color:#222f3e;
+        // font-size: 2rem + 3rem;
+        // transition: all 1s ease;
+        @include commoncode(0.2rem,capitalize);
+        &:hover{
+            color: #c8d6e5;
+        }
+        &::after{
+            content:"   @Somnath";
+        }
+    }
+    
+}

@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-header {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  background: #10ac84;
+}
+
+.main-header h1 {
+  color: #222f3e;
+  font-size: 5rem;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.main-header h1:hover {
+  color: #c8d6e5;
+}
+
+.main-header h1::after {
+  content: "   @Somnath";
+}
+
+.main-header p {
+  color: #222f3e;
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.main-header p:hover {
+  color: #c8d6e5;
+}
+
+.main-header p::after {
+  content: "   @Somnath";
+}
+/*# sourceMappingURL=main.css.map */

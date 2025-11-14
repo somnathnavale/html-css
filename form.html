@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Task</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+        }
+        .user-form{
+            min-height: 100vh;
+            width: 600px;
+            margin: auto;
+            background-color: rgba(232, 211, 140, 0.525);
+            padding: 20px 10px;
+            color: darkgoldenrod;
+            font-size: 16px;
+        }
+        .user-form h2{
+            text-align: center;
+            margin: 20px 0px;
+        }
+        .user-form>div{
+            font-size: 18px;
+            margin: auto;
+            margin-top: 10px;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .user-form div input, select, textarea{
+            width: 60%;
+            padding: 5px 10px;
+            outline: none;
+            border: none;
+        }
+        .user-form .gender-element{
+            /* display: inline-block; */
+            display: flex;
+            width: 60%;
+        }
+        .user-form .skill-element{
+            width: 60%;
+            display: flex;
+        }
+        .user-form button{
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            width: 80%;
+            padding: 5px 10px;
+            color: white;
+            font-size: 18px;
+            background-color: rgb(80, 206, 80);
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .user-form button:hover{
+            background-color: rgb(72, 231, 72);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <form method="post" class="user-form">
+        <h2>STUDENT INFORMATION</h2>
+        <div>
+            <label for="name" required>Name</label>
+            <input type="text" name="Name" id="name">
+        </div>
+        <div>
+            <label for="grNo">GR No</label>
+            <input type="number" name="grNo" id="grNo" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="pwd" autocomplete="off">Password</label>
+            <input type="password" name="pwd" id="pwd" minlength="8" maxlength="23" required>
+        </div>
+        <div>
+            <label for="phone">Phone No</label>
+            <input type="tel" name="phone" id="phone" maxlength="10" required>
+        </div>
+        <div>
+            <label for="percentage">Grad. Percentage</label>
+            <input type="number" name="percentage" id="percentage" maxlength="5" minlength="2" required>
+        </div>
+        <div>
+            <span>Select a gender</span>
+            <div class="gender-element">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" required>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female">
+                <label for="other">Other</label>
+                <input type="radio" name="gender" id="other">
+            </div>
+        </div>
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" required>
+        </div>
+        <div>
+            <label for="address" >Address</label><br>
+            <textarea name="address" id="address" cols="30" rows="5" required></textarea>
+        </div>
+        <div>
+            <span>Skills</span>
+            <div class="skill-element">
+                <label for="html">HTML</label>
+                <input type="checkbox" name="html" id="html" required>
+                <label for="css">CSS</label>
+                <input type="checkbox" name="css" id="css" >
+                <label for="javasript">Javasript</label>
+                <input type="checkbox" name="javasript" id="javasript" >
+                <label for="bootstrap">Bootstrap</label>
+                <input type="checkbox" name="bootstrap" id="bootstrap" >
+            </div>
+        </div>
+        <div>
+            <label for="branch">Branch</label>
+            <select name="branch" id="branch" required>
+                <option value="">--Select Branch--</option>
+                <option value="CS" >CS</option>
+                <option value="IT" >IT</option>
+                <option value="E&TC" >E&TC</option>
+                <option value="ELECTRICAL" >ELECTRICAL</option>
+                <option value="MECH" >MECH</option>
+                <option value="CIVIL" >CIVIL</option>
+            </select>
+        </div>
+        <div>
+            <label for="resume">Resume</label>
+            <input type="file" name="resume" id="resume" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

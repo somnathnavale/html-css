@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML_REVISION</title>
+  </head>
+  <body>
+    <h1>this is h1 tag</h1>
+    <hr />
+    <h2>now learn lists in html</h2>
+    <ul>
+      <li>Somnath Navale</li>
+      <li>dnyaneshwari navale</li>
+      <li>Vishal Navale</li>
+      <li>Ashwini Navale</li>
+    </ul>
+    <hr />
+    <h2>learn table tag</h2>
+    <h3>Student data</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Gr No.</th>
+          <th>Branch</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Somnath Navale</td>
+          <td>21810624</td>
+          <td rowspan="3">E&TC</td>
+        </tr>
+        <tr>
+          <td>Sameer garude</td>
+          <td>21810614</td>
+        </tr>
+        <tr>
+          <td>Atharva Helasker</td>
+          <td>21810828</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td colspan="3">3</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>company</th>
+          <th>salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>somnath</td>
+          <td>Zensar</td>
+          <td rowspan="3">6.5LPA</td>
+        </tr>
+        <tr>
+          <td>omkar</td>
+          <td>Zensar</td>
+          <!-- <td>6.5LPA</td> -->
+        </tr>
+        <tr>
+          <td>Rushikesh</td>
+          <td>Zensar</td>
+          <!-- <td>6.5LPA</td> -->
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td colspan="2" style="text-align:center">3</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr>
+    <h3>time to learn html forms</h3>
+    <form>
+      <fieldset>
+        <fieldset>
+          <h3>text input tag explained here</h3>
+          <label for="fname">First Name :</label><br />
+          <input type="text" name="fname" id="fname" /><br />
+          <label for="lname">Last Name :</label><br />
+          <input type="text" name="lname" id="lname" />
+        </fieldset>
+        <fieldset>
+          <h3>Radio tag are here</h3>
+          <h4>choose your IPL team</h4>
+          <input type="radio" name="ipl_team" id="csk" />
+          <label for="csk">CSK</label><br />
+          <input type="radio" name="ipl_team" id="mi" />
+          <label for="mi">MI</label><br />
+          <input type="radio" name="ipl_team" id="rcb" />
+          <label for="rcb">RCB</label><br />
+          <input type="radio" name="ipl_team" id="dc" />
+          <label for="dc">DC</label><br />
+        </fieldset>
+        <fieldset>
+          <h3>checkbox tag is expalined here</h3>
+          <h4>select year CSK win IPL</h4>
+          <input type="checkbox" name="csk_year" id="2010" />
+          <label for="2010">2010</label><br />
+          <input type="checkbox" name="csk_year" id="2011" />
+          <label for="2011">2011</label><br />
+          <input type="checkbox" name="csk_year" id="2012" />
+          <label for="2012">2012</label><br />
+          <input type="checkbox" name="csk_year" id="2021" />
+          <label for="2018">2018</label><br />
+        </fieldset>
+        <label for="mob_num">Mobile Number :</label><br>
+        <input type="number" name="mob_num" id="mob_num"><br>
+        <label for="passwd">Password :</label><br>
+        <input type="password" name="passwd" id="passwd"><br>
+        <label for="dob">Date of Birth :</label><br>
+        <input type="date" name="dob" id="dob" required><br>
+        <label for="mail">Email:</label><br>
+        <input type="email" name="mail" id="mail" required><br>
+        <label for="resume">Resume :</label><br>
+        <input type="file" name="resume" id="resume"><br><br>
+        <input type="button" value="alu"><br><br>
+        <button class="button button1">green</button><br>
+        <input type="submit" value="click here">
+      </fieldset>
+    </form>
+  </body>
+</html>
